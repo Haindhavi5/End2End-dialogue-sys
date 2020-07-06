@@ -44,7 +44,7 @@ def train_step(model, optimizer, loss_criterion, max_grad_norm, memory, query, t
     
     optimizer.step()
     
-    return loss.data[0]
+    return loss.item[0]
 
 
 def train(model, 
